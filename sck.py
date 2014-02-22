@@ -16,9 +16,9 @@ def getStats():
 
 ###############################################################################
 @app.route("/")
-def temperature():
+def status():
     data = getStats()
-    return render_template('temperature.html', data=data['devices'][0]['posts'])
+    return render_template('status.html', data=data['devices'][0]['posts'])
 
 
 ###############################################################################
